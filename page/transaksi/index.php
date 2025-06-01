@@ -1,3 +1,17 @@
+<?php
+  session_start();
+  include_once '../../components/koneksi.php';
+  if (!isset($_GET['id_game'])) {
+    header('Location: ../index.php');
+  }
+
+  $id_game = $_GET['id_game'];
+  $query = "SELECT * FROM `pembayaran` WHERE id_game = ?;";
+  $stmt = $conn->prepare($query);
+  $stmt->bind_param("i", $id_game);
+  $stmt->execute();
+  $result = $stmt->get_result();
+  ?>
 <html lang="en">
  <head>
   <meta charset="utf-8"/>

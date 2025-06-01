@@ -25,7 +25,7 @@
           SeaGames
         </span>
       </div>
-      <div class="header-right">
+      <div class="header-right">  
         <?php
         if (isset($_SESSION['username'])) {  ?>
           <button aria-label="Help" class="btn-help" type="button">
@@ -71,8 +71,8 @@
       </section>
     </main>
   </body>
-
+  
   </html>
   </body>
-
+            
   </html>
