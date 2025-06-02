@@ -71,8 +71,4 @@
       </section>
     </main>
   </body>
-  
-  </html>
-  </body>
-            
   </html>

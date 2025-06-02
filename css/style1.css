@@ -79,6 +79,7 @@
     max-width: 720px;
     margin: 24px auto 48px;
     padding: 0 16px;
+    align-content: center;
   }
   .top-banner {
     border-radius: 8px;

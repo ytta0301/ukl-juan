@@ -95,7 +95,7 @@
     <div class="topup-item" tabindex="0" data-id="8080">
      <img alt="Oneiric shard crystal glowing with colorful light" height="80" src="https://storage.googleapis.com/a1aa/image/a2cac440-d813-4cdc-3bcc-ca5d96b95e9e.jpg" width="180"/>
      <div class="topup-text">
-      6480+1600 Oneiric Shard
+      6480+1600 
      </div>
      <div class="topup-subtext">
       Rp 1.210.000,-
