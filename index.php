@@ -3,7 +3,7 @@
   include_once 'components/koneksi.php';
   $query = "SELECT * FROM `game`;";
   $result = $conn->query($query);
-   
+  
   ?>
 
   <!DOCTYPE html>
