@@ -11,12 +11,12 @@
   $id_game = intval($_GET['id_game']); // Safe conversion to integer
 
   // Fetch game info
-  $query_game = "SELECT * FROM game WHERE id = $id_game";
+  $query_game = "SELECT * FROM game WHERE id = $id_bank";
   $result_game = mysqli_query($conn, $query_game);
   $game = mysqli_fetch_assoc($result_game);
 
   // Fetch payment options (diamonds)
-  $query_diamond = "SELECT * FROM pembayaran WHERE id_game = $id_game ORDER BY price ASC";
+  $query_diamond = "SELECT * FROM pembayaran WHERE id_game = $id_ ORDER BY price ASC";
   $result_diamond = mysqli_query($conn, $query_diamond);
   ?>
 
@@ -32,24 +32,6 @@
 
   <div class="container">
 
-    <!-- Player ID & Server -->
-    <div class="row">
-      <div style="flex:1;">
-        <label for="playerId">Masukkan Player ID</label>
-        <input id="playerId" name="playerId" placeholder="USER ID" type="text"/>
-      </div>
-      <div style="flex:1;">
-  
-      </div>
-    </div>
-
-    <!-- WhatsApp -->
-    <div>
-      <label for="whatsapp">Nomor WhatsApp</label>
-      <input class="full-width" id="whatsapp" name="whatsapp" placeholder="08xxxxxxxx" type="text"/>
-    </div>
-
-    <!-- Top Up Section -->
     <h2>Pilih Nominal Top Up</h2>
 
     <?php if ($game): ?>

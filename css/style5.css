@@ -149,10 +149,7 @@
     user-select: none;
     transition: background-color 0.3s ease;
   }
-  button.confirm-btn:hover,
-  button.confirm-btn:focus {
-    background-color: #333;
-    outline: none;
-  }
+  
+  
 
     
