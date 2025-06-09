@@ -28,9 +28,7 @@
       <div class="header-right">  
         <?php
         if (isset($_SESSION['username'])) {  ?>
-          <button aria-label="Help" class="btn-help" type="button">
-            Help
-          </button>
+          <a href="page\login\logout.php"><button aria-label="" class="btn-help" type="button"> logout</button></a>
           <button aria-label="Calendar" class="icon-btn">
             <i aria-hidden="true" class="fas fa-calendar-alt">
             </i>
