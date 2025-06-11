@@ -150,6 +150,31 @@
     transition: background-color 0.3s ease;
   }
   
+  .bank-options {
+  display: flex;
+  gap: 10px;
+  margin: 16px 0;
+}
+
+.bank-btn {
+  padding: 10px 16px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.bank-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.selected-bank {
+  background-color: #000;
+  color: white;
+  border-color: #000;
+}
+  
   
 
     
