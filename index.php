@@ -13,6 +13,7 @@ if ($conn->connect_error) {
     die("Koneksi gagal: " . $conn->connect_error);
 }
 
+
 // Ambil semua data game dari tabel 'game'
 $query = "SELECT * FROM game";
 $result = $conn->query($query);
@@ -124,7 +125,7 @@ $result = $conn->query($query);
     <div class="header-right">  
       <?php if (isset($_SESSION['username'])) { ?>
         <a href="page/login/logout.php"><button class="btn-register">Logout</button></a>
-        <a href="#"><img src="castoris.png" alt="Profile" width="28" height="28"></a>
+        <a href="page/login/profil.php"><img src="" alt="profile" width="28" height="28"></a>
       <?php } else { ?>
         <button class="btn-register"><a href="page/login/login.php" style="color:white; text-decoration:none;">Login</a></button>
       <?php } ?>
@@ -146,9 +147,9 @@ $result = $conn->query($query);
 
       <?php if ($result->num_rows > 0): ?>
         <?php while ($row = $result->fetch_assoc()): 
-          $imageName = htmlspecialchars($row['img']);
+          $imageName = $row['img'];
           $imagePath = "img/game/" . $imageName;
-          $gameName = htmlspecialchars($row['name']);
+          $gameName = $row['name'];
           $gameId = intval($row['id']);
         ?>
           <div class="game-item">

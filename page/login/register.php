@@ -15,10 +15,10 @@ if (isset($_POST['submit'])) {
     $cpassword = md5($_POST['cpassword']);
 
     if ($password == $cpassword) {
-        $sql = "SELECT * FROM users WHERE email='$email'";
+        $sql = "SELECT * FROM user WHERE email='$email'";
         $result = mysqli_query($mysqli, $sql);
         if (!$result->num_rows > 0) {
-            $sql = "INSERT INTO users (username, email, password) 
+            $sql = "INSERT INTO user (username, email, password) 
                     VALUES ('$username', '$email', '$password')";
             $result = mysqli_query($mysqli, $sql);
             if ($result) {

@@ -8,6 +8,10 @@ if (!isset($_GET['id_game'])) {
     exit;
 }
 
+if (!isset($_SESSION['id'])) {
+    die("Anda harus login dulu.");
+}
+
 $id_game = intval($_GET['id_game']); // Aman dari injection
 
 // Ambil info game
@@ -111,9 +115,8 @@ if (isset($_POST['submit'])) {
 
     <!-- Confirm Button -->
     <div class="input-group">
-      <button type="submit" name="submit" class="btn">Konfirmasi</button>
+      <button type="submit" name="submit" class="confirm-btn">Konfirmasi</button>
     </div>
-
   </form>
 </div>
 
